@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 import { ShoppingCart } from 'lucide-react';
 import { Heart } from 'lucide-react';
 
-const ProductCard = ({product, addToCart}) => {
+const ProductCard = ({product, addToCart, addToWishlist}) => {
   return (
     <div>
         <Card className="w-full max-w-sm">
@@ -18,7 +18,7 @@ const ProductCard = ({product, addToCart}) => {
                 </span>
                 <div className='md:flex flex-row justify-between mt-2 flex-col space-y-2 w-full max-w-md'>
                     <Button className="bg-orange-500 hover:bg-orange-600" onClick={()=> addToCart(product)}>Add To Cart <ShoppingCart/> </Button>
-                    <Button className="bg-orange-500 hover:bg-orange-600">Add To Wishlist<Heart/> </Button>
+                    <Button className="bg-orange-500 hover:bg-orange-600" onClick={() => addToWishlist(product)}>Add To Wishlist<Heart/> </Button>
                 </div>
                 </div>
             </CardContent>
