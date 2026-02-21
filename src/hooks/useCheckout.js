@@ -36,7 +36,7 @@ export const useCheckout = create((set, get) => ({
       const reference = `REF-${Date.now()}`;
 
       const handler = window.PaystackPop.setup({
-        key: "pk_test_72939a2b24a28ce99d044b64149caa676fddf1e1",
+        key: "",
         email,
         amount: totalAmount * 100,
         ref: reference,
