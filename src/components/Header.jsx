@@ -26,11 +26,11 @@ function Header({item, wishlist}) {
     {item.length}
   </span>
 </Link>
-<span className='relative'>
+<Link to="/wishlist" className="relative">
   <Heart/>
   <span className='absolute -top-2 -right-2 bg-red-500 text-white
    rounded-full w-5 h-5 text-xs flex items-center justify-center'>{wishlist.length}</span>
-</span>
+</Link>
 
         </nav>
 

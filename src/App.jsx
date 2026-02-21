@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import Layout from "./components/layout";
+import Order from "./pages/Order";
 
     
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/wishlist" element={<Wishlist />} />
+      <Route path="/orders" element={<Order />} />
 
       </Route>
     </Routes>
